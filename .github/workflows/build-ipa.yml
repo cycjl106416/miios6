@@ -1,0 +1,67 @@
+name: Build IPA (TrollStore / 未签名)
+
+# 触发方式：
+# 1. push 到 main 分支，或
+# 2. 在仓库 Actions 页面手动点 Run workflow
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-ipa:
+    # 免费的云端 Mac（GitHub 官方 runner）
+    runs-on: macos-14
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 查看 Xcode 版本
+        run: xcodebuild -version
+
+      - name: 定位工程目录（兼容仓库根 / MiSound-iOS 子目录两种结构）
+        id: locate
+        run: |
+          if [ -f "MiSound.xcodeproj/project.pbxproj" ]; then
+            echo "dir=." >> $GITHUB_OUTPUT
+          elif [ -f "MiSound-iOS/MiSound.xcodeproj/project.pbxproj" ]; then
+            echo "dir=MiSound-iOS" >> $GITHUB_OUTPUT
+          else
+            echo "找不到 MiSound.xcodeproj，请检查上传结构" && exit 1
+          fi
+
+      - name: 编译（关闭签名，产出 arm64 iOS 可执行文件）
+        run: |
+          cd "${{ steps.locate.outputs.dir }}"
+          xcodebuild \
+            -project MiSound.xcodeproj \
+            -target MiSound \
+            -configuration Release \
+            -sdk iphoneos \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build
+
+      - name: 打 IPA 包（Payload/MiSound.app）
+        run: |
+          APP_PATH=$(find ~/Library/Developer/Xcode/DerivedData -name "MiSound.app" -path "*Release-iphoneos*" | head -n 1)
+          if [ -z "$APP_PATH" ]; then
+            echo "未找到构建产物 MiSound.app"
+            find ~/Library/Developer/Xcode/DerivedData -name "*.app" -maxdepth 8 | head -n 20
+            exit 1
+          fi
+          echo "产物: $APP_PATH"
+          mkdir -p Payload
+          cp -R "$APP_PATH" Payload/
+          # ditto 保留文件权限/符号链接，TrollStore 可正常安装
+          ditto -c -k --keepParent Payload MiSound-TrollStore.ipa
+          ls -la MiSound-TrollStore.ipa
+
+      - name: 上传 IPA 产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: MiSound-TrollStore-ipa
+          path: MiSound-TrollStore.ipa
+          if-no-files-found: error
