@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00000000000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000001 /* AppDelegate.swift */; };
+		B00000000000000000000002 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000002 /* SceneDelegate.swift */; };
+		B00000000000000000000003 /* SoundDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000003 /* SoundDevice.swift */; };
+		B00000000000000000000004 /* PlaybackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000004 /* PlaybackState.swift */; };
+		B00000000000000000000005 /* MiioCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000005 /* MiioCrypto.swift */; };
+		B00000000000000000000006 /* MiioLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000006 /* MiioLocalService.swift */; };
+		B00000000000000000000007 /* DeviceDiscoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000007 /* DeviceDiscoveryService.swift */; };
+		B00000000000000000000008 /* UPnPControlService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000008 /* UPnPControlService.swift */; };
+		B00000000000000000000009 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000009 /* DeviceManager.swift */; };
+		B0000000000000000000000A /* NowPlayingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000A /* NowPlayingController.swift */; };
+		B0000000000000000000000B /* PlayerControlBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000B /* PlayerControlBar.swift */; };
+		B0000000000000000000000C /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000C /* DeviceCell.swift */; };
+		B0000000000000000000000D /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000D /* DeviceListViewController.swift */; };
+		B0000000000000000000000E /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000E /* MainPageViewController.swift */; };
+		B0000000000000000000000F /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000000000000000F /* PlayerViewController.swift */; };
+		B00000000000000000000010 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000010 /* SettingsViewController.swift */; };
+		B00000000000000000000011 /* WifiConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000011 /* WifiConfigViewController.swift */; };
+		B00000000000000000000012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000022 /* LaunchScreen.storyboard */; };
+		B00000000000000000000013 /* ContentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000013 /* ContentModels.swift */; };
+		B00000000000000000000014 /* ContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000014 /* ContentService.swift */; };
+		B00000000000000000000015 /* DeviceFeatureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000015 /* DeviceFeatureService.swift */; };
+		B00000000000000000000016 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000016 /* AlarmViewController.swift */; };
+		B00000000000000000000017 /* SoundEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000017 /* SoundEffectViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F00000000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F00000000000000000000002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F00000000000000000000003 /* SoundDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundDevice.swift; sourceTree = "<group>"; };
+		F00000000000000000000004 /* PlaybackState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackState.swift; sourceTree = "<group>"; };
+		F00000000000000000000005 /* MiioCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiioCrypto.swift; sourceTree = "<group>"; };
+		F00000000000000000000006 /* MiioLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiioLocalService.swift; sourceTree = "<group>"; };
+		F00000000000000000000007 /* DeviceDiscoveryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDiscoveryService.swift; sourceTree = "<group>"; };
+		F00000000000000000000008 /* UPnPControlService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPnPControlService.swift; sourceTree = "<group>"; };
+		F00000000000000000000009 /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		F0000000000000000000000A /* NowPlayingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingController.swift; sourceTree = "<group>"; };
+		F0000000000000000000000B /* PlayerControlBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlBar.swift; sourceTree = "<group>"; };
+		F0000000000000000000000C /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+		F0000000000000000000000D /* DeviceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
+		F0000000000000000000000E /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		F0000000000000000000000F /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		F00000000000000000000010 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F00000000000000000000011 /* WifiConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiConfigViewController.swift; sourceTree = "<group>"; };
+		F00000000000000000000013 /* ContentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModels.swift; sourceTree = "<group>"; };
+		F00000000000000000000014 /* ContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentService.swift; sourceTree = "<group>"; };
+		F00000000000000000000015 /* DeviceFeatureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFeatureService.swift; sourceTree = "<group>"; };
+		F00000000000000000000016 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		F00000000000000000000017 /* SoundEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffectViewController.swift; sourceTree = "<group>"; };
+		F00000000000000000000020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F00000000000000000000021 /* MiSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00000000000000000000022 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F20000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G00000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				G00000000000000000000002 /* MiSound */,
+				G00000000000000000000010 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G00000000000000000000002 /* MiSound */ = {
+			isa = PBXGroup;
+			children = (
+				G00000000000000000000003 /* App */,
+				G00000000000000000000004 /* Models */,
+				G00000000000000000000005 /* Services */,
+				G00000000000000000000006 /* Views */,
+				G00000000000000000000007 /* ViewControllers */,
+				G00000000000000000000008 /* Resources */,
+			);
+			path = MiSound;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000001 /* AppDelegate.swift */,
+				F00000000000000000000002 /* SceneDelegate.swift */,
+				F00000000000000000000020 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000003 /* SoundDevice.swift */,
+				F00000000000000000000004 /* PlaybackState.swift */,
+				F00000000000000000000013 /* ContentModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000005 /* MiioCrypto.swift */,
+				F00000000000000000000006 /* MiioLocalService.swift */,
+				F00000000000000000000007 /* DeviceDiscoveryService.swift */,
+				F00000000000000000000008 /* UPnPControlService.swift */,
+				F00000000000000000000009 /* DeviceManager.swift */,
+				F0000000000000000000000A /* NowPlayingController.swift */,
+				F00000000000000000000014 /* ContentService.swift */,
+				F00000000000000000000015 /* DeviceFeatureService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0000000000000000000000B /* PlayerControlBar.swift */,
+				F0000000000000000000000C /* DeviceCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000007 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0000000000000000000000D /* DeviceListViewController.swift */,
+				F0000000000000000000000E /* MainPageViewController.swift */,
+				F0000000000000000000000F /* PlayerViewController.swift */,
+				F00000000000000000000010 /* SettingsViewController.swift */,
+				F00000000000000000000011 /* WifiConfigViewController.swift */,
+				F00000000000000000000016 /* AlarmViewController.swift */,
+				F00000000000000000000017 /* SoundEffectViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000022 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000021 /* MiSound.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		T00000000000000000000001 /* MiSound */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C00000000000000000000002 /* Build configuration list for PBXNativeTarget "MiSound" */;
+			buildPhases = (
+				S00000000000000000000001 /* Sources */,
+				F20000000000000000000001 /* Frameworks */,
+				R00000000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiSound;
+			productName = MiSound;
+			productReference = F00000000000000000000021 /* MiSound.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		P00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					T00000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = C00000000000000000000001 /* Build configuration list for PBXProject "MiSound" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = zh_CN;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				zh_CN,
+				en,
+				Base,
+			);
+			mainGroup = G00000000000000000000001;
+			productRefGroup = G00000000000000000000010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				T00000000000000000000001 /* MiSound */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		R00000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000012 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		S00000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000001 /* AppDelegate.swift in Sources */,
+				B00000000000000000000002 /* SceneDelegate.swift in Sources */,
+				B00000000000000000000003 /* SoundDevice.swift in Sources */,
+				B00000000000000000000004 /* PlaybackState.swift in Sources */,
+				B00000000000000000000005 /* MiioCrypto.swift in Sources */,
+				B00000000000000000000006 /* MiioLocalService.swift in Sources */,
+				B00000000000000000000007 /* DeviceDiscoveryService.swift in Sources */,
+				B00000000000000000000008 /* UPnPControlService.swift in Sources */,
+				B00000000000000000000009 /* DeviceManager.swift in Sources */,
+				B0000000000000000000000A /* NowPlayingController.swift in Sources */,
+				B0000000000000000000000B /* PlayerControlBar.swift in Sources */,
+				B0000000000000000000000C /* DeviceCell.swift in Sources */,
+				B0000000000000000000000D /* DeviceListViewController.swift in Sources */,
+				B0000000000000000000000E /* MainPageViewController.swift in Sources */,
+				B0000000000000000000000F /* PlayerViewController.swift in Sources */,
+				B00000000000000000000010 /* SettingsViewController.swift in Sources */,
+				B00000000000000000000011 /* WifiConfigViewController.swift in Sources */,
+				B00000000000000000000013 /* ContentModels.swift in Sources */,
+				B00000000000000000000014 /* ContentService.swift in Sources */,
+				B00000000000000000000015 /* DeviceFeatureService.swift in Sources */,
+				B00000000000000000000016 /* AlarmViewController.swift in Sources */,
+				B00000000000000000000017 /* SoundEffectViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		X00000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		X00000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		X00000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 300;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MiSound/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.misound.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		X00000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 300;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MiSound/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.misound.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C00000000000000000000001 /* Build configuration list for PBXProject "MiSound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				X00000000000000000000001 /* Debug */,
+				X00000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C00000000000000000000002 /* Build configuration list for PBXNativeTarget "MiSound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				X00000000000000000000003 /* Debug */,
+				X00000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = P00000000000000000000001 /* Project object */;
+}
